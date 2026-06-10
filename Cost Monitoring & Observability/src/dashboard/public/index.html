@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cost Monitoring & Observability</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <nav class="topbar">
+      <div class="brand">
+        <span class="brand-mark">CM</span>
+        <span>AI Cost Monitor</span>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Views">
+        <button id="btn-chat" class="tab active" type="button">Chat</button>
+        <button id="btn-dashboard" class="tab" type="button">Dashboard</button>
+      </div>
+    </nav>
+
+    <main>
+      <section id="view-chat" class="view chat-view">
+        <div class="config-bar">
+          <label>
+            Provider
+            <select id="provider-select">
+              <option value="LM_STUDIO">LM Studio</option>
+              <option value="ZHIPU_API">ZhipuAI GLM</option>
+            </select>
+          </label>
+          <label id="lm-model-field">
+            Model
+            <input id="lm-model-input" type="text" value="local-model" />
+          </label>
+          <label id="zhipu-model-field" hidden>
+            Model
+            <select id="zhipu-model-select">
+              <option value="glm-4.5">glm-4.5</option>
+              <option value="glm-4.6">glm-4.6</option>
+              <option value="glm-4.7">glm-4.7</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="chat-window" class="chat-window" aria-live="polite"></div>
+
+        <form id="chat-form" class="composer">
+          <textarea
+            id="prompt-input"
+            rows="2"
+            placeholder="Ask a question..."
+            required
+          ></textarea>
+          <button id="send-button" type="submit">Send</button>
+        </form>
+      </section>
+
+      <section id="view-dashboard" class="view dashboard-view" hidden>
+        <div class="summary-grid">
+          <article class="metric-card">
+            <span>Total Calls</span>
+            <strong id="total-calls">0</strong>
+          </article>
+          <article class="metric-card">
+            <span>Total Tokens</span>
+            <strong id="total-tokens">0</strong>
+          </article>
+          <article class="metric-card">
+            <span>Remote Cost</span>
+            <strong id="total-cost">$0.000000</strong>
+          </article>
+          <article class="metric-card">
+            <span>Error Rate</span>
+            <strong id="error-rate">0%</strong>
+          </article>
+        </div>
+
+        <div class="chart-grid">
+          <section class="chart-panel">
+            <h2>Token Usage Over Time</h2>
+            <div class="chart-container">
+              <canvas id="tokens-chart"></canvas>
+            </div>
+          </section>
+          <section class="chart-panel">
+            <h2>Average Latency By Model</h2>
+            <div class="chart-container">
+              <canvas id="latency-chart"></canvas>
+            </div>
+          </section>
+          <section class="chart-panel narrow">
+            <h2>Calls By Provider</h2>
+            <div class="chart-container">
+              <canvas id="provider-chart"></canvas>
+            </div>
+          </section>
+        </div>
+
+        <section class="table-section">
+          <div class="section-heading">
+            <h2>Recent Calls</h2>
+            <span id="refresh-status">Auto-refresh every 10s</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Provider</th>
+                  <th>Model</th>
+                  <th>Tokens</th>
+                  <th>Latency</th>
+                  <th>Cost</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="recent-table"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

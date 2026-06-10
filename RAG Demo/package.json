@@ -1,0 +1,20 @@
+{
+  "name": "rag-demo",
+  "version": "1.0.0",
+  "description": "RAG Basic Demo - Embeddings, Vector Search, Retrieval Pipeline",
+  "type": "module",
+  "scripts": {
+    "index": "tsx src/indexer.ts",
+    "query": "tsx src/retriever.ts",
+    "demo": "tsx src/demo.ts",
+    "demo:compare": "tsx src/demo.ts --compare"
+  },
+  "dependencies": {
+    "openai": "^4.52.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.15.0",
+    "typescript": "^5.4.0",
+    "@types/node": "^20.14.0"
+  }
+}

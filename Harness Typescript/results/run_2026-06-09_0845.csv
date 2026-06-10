@@ -1,0 +1,6 @@
+Provider,Test ID,Status,Score (0-1),Latency (ms),Reason/Details,Error Message
+anthropic,math_004,FAILED,0,2161,"Expected '25', got '100 divided by 4 is **25**.'",
+anthropic,math_001,PASSED,1,2356,,
+anthropic,math_002,FAILED,0,2418,"Expected '12', got 'The square root of 144 is **12**.'",
+anthropic,math_003,PASSED,1,3304,,
+anthropic,math_005,PASSED,1,4548,,

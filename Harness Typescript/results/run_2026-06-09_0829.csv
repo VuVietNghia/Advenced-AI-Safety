@@ -1,0 +1,6 @@
+Provider,Test ID,Status,Score (0-1),Latency (ms),Reason/Details,Error Message
+lm_studio,math_001,FAILED,0,14159,,"400 ""Your payload's 'messages' array in misformatted. Messages from roles [user, system, tool] must contain a 'content' field. Got 'undefined'."""
+lm_studio,math_002,FAILED,0,14162,,"400 ""Your payload's 'messages' array in misformatted. Messages from roles [user, system, tool] must contain a 'content' field. Got 'undefined'."""
+lm_studio,math_003,FAILED,0,14187,,"400 ""Your payload's 'messages' array in misformatted. Messages from roles [user, system, tool] must contain a 'content' field. Got 'undefined'."""
+lm_studio,math_004,FAILED,0,14190,,"400 ""Your payload's 'messages' array in misformatted. Messages from roles [user, system, tool] must contain a 'content' field. Got 'undefined'."""
+lm_studio,math_005,FAILED,0,14215,,"400 ""Your payload's 'messages' array in misformatted. Messages from roles [user, system, tool] must contain a 'content' field. Got 'undefined'."""

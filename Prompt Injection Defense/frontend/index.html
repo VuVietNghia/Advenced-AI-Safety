@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Safety Chat - Prompt Injection Defense</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <div class="layout">
+        <!-- Stats Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <h2>🛡️ Defense Pipeline</h2>
+            <p>Single-turn architecture</p>
+          </div>
+          
+          <div class="stats-container">
+            <div class="stat-card">
+              <div class="stat-icon layer-1">1</div>
+              <div class="stat-info">
+                <span class="stat-label">Input Sanitizer</span>
+                <span class="stat-value" id="stat-layer1">0 blocks</span>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-icon layer-2">2</div>
+              <div class="stat-info">
+                <span class="stat-label">Pattern Detector</span>
+                <span class="stat-value" id="stat-layer2">0 blocks</span>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon layer-3">3</div>
+              <div class="stat-info">
+                <span class="stat-label">Intent Classifier</span>
+                <span class="stat-value" id="stat-layer3">0 blocks</span>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon layer-4">4</div>
+              <div class="stat-info">
+                <span class="stat-label">Context Guard</span>
+                <span class="stat-value">Active (Single-turn)</span>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon layer-5">5</div>
+              <div class="stat-info">
+                <span class="stat-label">Output Validator</span>
+                <span class="stat-value" id="stat-layer5">0 blocks</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-area">
+          <header class="chat-header">
+            <div class="header-status">
+              <span class="pulse-dot"></span>
+              <span>LM Studio Connected</span>
+            </div>
+          </header>
+
+          <div class="chat-messages" id="chat-messages">
+            <!-- Initial Message -->
+            <div class="message assistant">
+              <div class="message-content">
+                Hello! I am a safe AI assistant. Try sending me a normal question, or try a prompt injection attack (like "Ignore previous instructions") to see the defense pipeline in action!
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-input-container">
+            <textarea id="chat-input" placeholder="Type a message... (Shift+Enter for new line)" rows="1"></textarea>
+            <button id="send-btn" title="Send (Enter)">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

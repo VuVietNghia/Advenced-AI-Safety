@@ -1,0 +1,57 @@
+[
+  {
+    "test_id": "math_001",
+    "provider": "lm_studio",
+    "input": "What is 15 * 8?",
+    "output": "15 multiplied by 8 equals 120.",
+    "passed": true,
+    "score": 1.0,
+    "reason": "",
+    "latency_ms": 2835.8,
+    "error": ""
+  },
+  {
+    "test_id": "math_002",
+    "provider": "lm_studio",
+    "input": "What is the square root of 144?",
+    "output": "The square root of 144 is **12**.\n\nThis is because $ 12 \\times 12 = 144 $.",
+    "passed": false,
+    "score": 0.0,
+    "reason": "Expected '12', got 'the square root of 144 is **12**.\n\nthis is because $ 12 \\times 12 = 144 $.'",
+    "latency_ms": 2902.5,
+    "error": ""
+  },
+  {
+    "test_id": "math_003",
+    "provider": "lm_studio",
+    "input": "Solve for x: 2x + 5 = 15",
+    "output": "We are given the equation:\n\n$$\n2x + 5 = 15\n$$\n\n**Step 1:** Subtract 5 from both sides:\n\n$$\n2x = 15 - 5\n$$\n$$\n2x = 10\n$$\n\n**Step 2:** Divide both sides by 2:\n\n$$\nx = \\frac{10}{2}\n$$\n$$\nx = 5\n$$\n\n**Final Answer:** $\\boxed{5}$",
+    "passed": true,
+    "score": 1.0,
+    "reason": "",
+    "latency_ms": 4710.9,
+    "error": ""
+  },
+  {
+    "test_id": "math_004",
+    "provider": "lm_studio",
+    "input": "What is 100 divided by 4?",
+    "output": "100 divided by 4 equals 25.",
+    "passed": false,
+    "score": 0.0,
+    "reason": "Expected '25', got '100 divided by 4 equals 25.'",
+    "latency_ms": 2010.0,
+    "error": ""
+  },
+  {
+    "test_id": "math_005",
+    "provider": "lm_studio",
+    "input": "If I have 5 apples and eat 2, how many are left?",
+    "output": "If you start with 5 apples and eat 2, you are left with 3 apples.",
+    "passed": true,
+    "score": 1.0,
+    "reason": "",
+    "latency_ms": 2738.3,
+    "error": ""
+  }
+]

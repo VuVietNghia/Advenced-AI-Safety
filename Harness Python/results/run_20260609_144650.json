@@ -1,0 +1,57 @@
+[
+  {
+    "test_id": "math_001",
+    "provider": "claude",
+    "input": "What is 15 * 8?",
+    "output": "The product of 15 multiplied by 8 is 120.\n\nHere is the step-by-step calculation:\n$$15 \\times 8 = 120$$",
+    "passed": true,
+    "score": 1.0,
+    "reason": "",
+    "latency_ms": 2930.9,
+    "error": ""
+  },
+  {
+    "test_id": "math_002",
+    "provider": "claude",
+    "input": "What is the square root of 144?",
+    "output": "The square root of 144 is **12** (since $12 \\times 12 = 144$).",
+    "passed": false,
+    "score": 0.0,
+    "reason": "Expected '12', got 'the square root of 144 is **12** (since $12 \\times 12 = 144$).'",
+    "latency_ms": 2729.0,
+    "error": ""
+  },
+  {
+    "test_id": "math_003",
+    "provider": "claude",
+    "input": "Solve for x: 2x + 5 = 15",
+    "output": "To solve for $x$, follow these steps:\n\n1.  **Subtract 5 from both sides:**\n    $$2x = 15 - 5$$\n    $$2x = 10$$\n\n2.  **Divide both sides by 2:**\n    $$x = \\frac{10}{2}$$\n    $$x = 5$$\n\n**Answer:**\n$$x = 5$$",
+    "passed": true,
+    "score": 1.0,
+    "reason": "",
+    "latency_ms": 2756.1,
+    "error": ""
+  },
+  {
+    "test_id": "math_004",
+    "provider": "claude",
+    "input": "What is 100 divided by 4?",
+    "output": "100 divided by 4 is **25**.",
+    "passed": false,
+    "score": 0.0,
+    "reason": "Expected '25', got '100 divided by 4 is **25**.'",
+    "latency_ms": 2086.1,
+    "error": ""
+  },
+  {
+    "test_id": "math_005",
+    "provider": "claude",
+    "input": "If I have 5 apples and eat 2, how many are left?",
+    "output": "You have **3** apples left.",
+    "passed": true,
+    "score": 1.0,
+    "reason": "",
+    "latency_ms": 4886.7,
+    "error": ""
+  }
+]

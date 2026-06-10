@@ -1,0 +1,8 @@
+Provider,Test ID,Status,Score (0-1),Latency (ms),Reason/Details,Error Message
+lm_studio,math_001,PASSED,1,1287,,
+lm_studio,math_004,FAILED,0,1345,"Expected '25', got '100 divided by 4 equals 25.'",
+lm_studio,math_002,FAILED,0,2319,"Expected '12', got 'The square root of 144 is **12**.
+
+This is because...'",
+lm_studio,math_005,PASSED,1,2473,,
+lm_studio,math_003,PASSED,1,3813,,

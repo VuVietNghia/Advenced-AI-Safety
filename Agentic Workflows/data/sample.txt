@@ -1,0 +1,5 @@
+Agentic workflow study note:
+- Plan: break a user goal into small steps.
+- Execute: run each step, optionally using tools.
+- Verify: inspect whether the step result is good enough.
+- Replan or retry when verification fails.

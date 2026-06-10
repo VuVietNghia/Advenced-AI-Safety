@@ -1,0 +1,6 @@
+Provider,Test ID,Status,Score (0-1),Latency (ms),Reason/Details,Error Message
+anthropic,math_003,FAILED,0,17812,,"422 {""detail"":[{""type"":""missing"",""loc"":[""body"",""messages"",0,""content""],""msg"":""Field required"",""input"":{""role"":""user""}}]}"
+anthropic,math_005,FAILED,0,22579,,"422 {""detail"":[{""type"":""missing"",""loc"":[""body"",""messages"",0,""content""],""msg"":""Field required"",""input"":{""role"":""user""}}]}"
+anthropic,math_004,FAILED,0,23083,,"422 {""detail"":[{""type"":""missing"",""loc"":[""body"",""messages"",0,""content""],""msg"":""Field required"",""input"":{""role"":""user""}}]}"
+anthropic,math_001,FAILED,0,28242,,"422 {""detail"":[{""type"":""missing"",""loc"":[""body"",""messages"",0,""content""],""msg"":""Field required"",""input"":{""role"":""user""}}]}"
+anthropic,math_002,FAILED,0,33107,,"422 {""detail"":[{""type"":""missing"",""loc"":[""body"",""messages"",0,""content""],""msg"":""Field required"",""input"":{""role"":""user""}}]}"

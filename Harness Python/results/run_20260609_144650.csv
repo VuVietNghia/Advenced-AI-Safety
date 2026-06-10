@@ -1,0 +1,20 @@
+test_id,provider,input,output,passed,score,reason,latency_ms,error
+math_001,claude,What is 15 * 8?,"The product of 15 multiplied by 8 is 120.
+
+Here is the step-by-step calculation:
+$$15 \times 8 = 120$$",True,1.0,,2930.9,
+math_002,claude,What is the square root of 144?,The square root of 144 is **12** (since $12 \times 12 = 144$).,False,0.0,"Expected '12', got 'the square root of 144 is **12** (since $12 \times 12 = 144$).'",2729.0,
+math_003,claude,Solve for x: 2x + 5 = 15,"To solve for $x$, follow these steps:
+
+1.  **Subtract 5 from both sides:**
+    $$2x = 15 - 5$$
+    $$2x = 10$$
+
+2.  **Divide both sides by 2:**
+    $$x = \frac{10}{2}$$
+    $$x = 5$$
+
+**Answer:**
+$$x = 5$$",True,1.0,,2756.1,
+math_004,claude,What is 100 divided by 4?,100 divided by 4 is **25**.,False,0.0,"Expected '25', got '100 divided by 4 is **25**.'",2086.1,
+math_005,claude,"If I have 5 apples and eat 2, how many are left?",You have **3** apples left.,True,1.0,,4886.7,

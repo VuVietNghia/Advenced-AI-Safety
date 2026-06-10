@@ -1,0 +1,47 @@
+[
+  {
+    "id": "code_001",
+    "input": "Write a Python function to reverse a string",
+    "eval_type": "llm_judge",
+    "criteria": "Correct Python syntax, uses slicing or built-in functions, handles edge cases, clean code",
+    "tags": [
+      "code"
+    ]
+  },
+  {
+    "id": "code_002",
+    "input": "Write a JavaScript function to filter even numbers from an array",
+    "eval_type": "llm_judge",
+    "criteria": "Valid JavaScript code, uses Array.prototype.filter, correct logic",
+    "tags": [
+      "code"
+    ]
+  },
+  {
+    "id": "code_003",
+    "input": "Explain what a Promise is in JavaScript in one sentence",
+    "eval_type": "llm_judge",
+    "criteria": "Accurate, concise, mentions asynchronous operations and states (pending, fulfilled, rejected)",
+    "tags": [
+      "code"
+    ]
+  },
+  {
+    "id": "code_004",
+    "input": "Write a SQL query to select all users older than 18 from table 'users'",
+    "eval_type": "llm_judge",
+    "criteria": "Valid SQL syntax, uses SELECT, FROM, WHERE clauses correctly",
+    "tags": [
+      "code"
+    ]
+  },
+  {
+    "id": "code_005",
+    "input": "Write a regex pattern to match a basic email address",
+    "eval_type": "llm_judge",
+    "criteria": "Valid regex syntax, matches standard email format with @ and domain",
+    "tags": [
+      "code"
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "provider": "anthropic",
+    "test_id": "math_004",
+    "passed": false,
+    "score": 0,
+    "latency_ms": 2161,
+    "reason": "Expected '25', got '100 divided by 4 is **25**.'",
+    "error": ""
+  },
+  {
+    "provider": "anthropic",
+    "test_id": "math_001",
+    "passed": true,
+    "score": 1,
+    "latency_ms": 2356,
+    "reason": "",
+    "error": ""
+  },
+  {
+    "provider": "anthropic",
+    "test_id": "math_002",
+    "passed": false,
+    "score": 0,
+    "latency_ms": 2418,
+    "reason": "Expected '12', got 'The square root of 144 is **12**.'",
+    "error": ""
+  },
+  {
+    "provider": "anthropic",
+    "test_id": "math_003",
+    "passed": true,
+    "score": 1,
+    "latency_ms": 3304,
+    "reason": "",
+    "error": ""
+  },
+  {
+    "provider": "anthropic",
+    "test_id": "math_005",
+    "passed": true,
+    "score": 1,
+    "latency_ms": 4548,
+    "reason": "",
+    "error": ""
+  }
+]

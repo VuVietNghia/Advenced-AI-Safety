@@ -1,0 +1,47 @@
+[
+  {
+    "provider": "lm_studio",
+    "test_id": "math_001",
+    "passed": false,
+    "score": 0,
+    "latency_ms": 14159,
+    "reason": "",
+    "error": "400 \"Your payload's 'messages' array in misformatted. Messages from roles [user, system, tool] must contain a 'content' field. Got 'undefined'.\""
+  },
+  {
+    "provider": "lm_studio",
+    "test_id": "math_002",
+    "passed": false,
+    "score": 0,
+    "latency_ms": 14162,
+    "reason": "",
+    "error": "400 \"Your payload's 'messages' array in misformatted. Messages from roles [user, system, tool] must contain a 'content' field. Got 'undefined'.\""
+  },
+  {
+    "provider": "lm_studio",
+    "test_id": "math_003",
+    "passed": false,
+    "score": 0,
+    "latency_ms": 14187,
+    "reason": "",
+    "error": "400 \"Your payload's 'messages' array in misformatted. Messages from roles [user, system, tool] must contain a 'content' field. Got 'undefined'.\""
+  },
+  {
+    "provider": "lm_studio",
+    "test_id": "math_004",
+    "passed": false,
+    "score": 0,
+    "latency_ms": 14190,
+    "reason": "",
+    "error": "400 \"Your payload's 'messages' array in misformatted. Messages from roles [user, system, tool] must contain a 'content' field. Got 'undefined'.\""
+  },
+  {
+    "provider": "lm_studio",
+    "test_id": "math_005",
+    "passed": false,
+    "score": 0,
+    "latency_ms": 14215,
+    "reason": "",
+    "error": "400 \"Your payload's 'messages' array in misformatted. Messages from roles [user, system, tool] must contain a 'content' field. Got 'undefined'.\""
+  }
+]

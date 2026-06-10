@@ -1,0 +1,34 @@
+test_id,provider,input,output,passed,score,reason,latency_ms,error
+math_001,lm_studio,What is 15 * 8?,15 multiplied by 8 equals 120.,True,1.0,,2835.8,
+math_002,lm_studio,What is the square root of 144?,"The square root of 144 is **12**.
+
+This is because $ 12 \times 12 = 144 $.",False,0.0,"Expected '12', got 'the square root of 144 is **12**.
+
+this is because $ 12 \times 12 = 144 $.'",2902.5,
+math_003,lm_studio,Solve for x: 2x + 5 = 15,"We are given the equation:
+
+$$
+2x + 5 = 15
+$$
+
+**Step 1:** Subtract 5 from both sides:
+
+$$
+2x = 15 - 5
+$$
+$$
+2x = 10
+$$
+
+**Step 2:** Divide both sides by 2:
+
+$$
+x = \frac{10}{2}
+$$
+$$
+x = 5
+$$
+
+**Final Answer:** $\boxed{5}$",True,1.0,,4710.9,
+math_004,lm_studio,What is 100 divided by 4?,100 divided by 4 equals 25.,False,0.0,"Expected '25', got '100 divided by 4 equals 25.'",2010.0,
+math_005,lm_studio,"If I have 5 apples and eat 2, how many are left?","If you start with 5 apples and eat 2, you are left with 3 apples.",True,1.0,,2738.3,

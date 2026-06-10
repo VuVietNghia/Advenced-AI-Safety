@@ -1,0 +1,57 @@
+[
+  {
+    "test_id": "math_001",
+    "provider": "lm_studio",
+    "input": "What is 15 * 8?",
+    "output": "120.",
+    "passed": true,
+    "score": 1.0,
+    "reason": "",
+    "latency_ms": 3209.5,
+    "error": ""
+  },
+  {
+    "test_id": "math_002",
+    "provider": "lm_studio",
+    "input": "What is the square root of 144?",
+    "output": "The square root of 144 is 12.",
+    "passed": false,
+    "score": 0.0,
+    "reason": "Expected '12', got 'the square root of 144 is 12.'",
+    "latency_ms": 4114.5,
+    "error": ""
+  },
+  {
+    "test_id": "math_003",
+    "provider": "lm_studio",
+    "input": "Solve for x: 2x + 5 = 15",
+    "output": "Bây giờ, chúng ta có phương trình:\n\n2x + 5 = 15\n\nĐể tìm x, ta thực hiện các bước sau:\n\n1. Trừ 5 từ cả hai vế của phương trình:\n\n2x + 5 - 5 = 15 - 5  \n→ 2x = 10\n\n2. Chia cả hai vế cho 2:\n\n2x / 2 = 10 / 2  \n→ x = 5\n\nVậy, **x = 5**. ✅",
+    "passed": true,
+    "score": 1.0,
+    "reason": "",
+    "latency_ms": 12213.7,
+    "error": ""
+  },
+  {
+    "test_id": "math_004",
+    "provider": "lm_studio",
+    "input": "What is 100 divided by 4?",
+    "output": "25",
+    "passed": true,
+    "score": 1.0,
+    "reason": "",
+    "latency_ms": 2186.1,
+    "error": ""
+  },
+  {
+    "test_id": "math_005",
+    "provider": "lm_studio",
+    "input": "If I have 5 apples and eat 2, how many are left?",
+    "output": "Bạn còn 3 táo.",
+    "passed": true,
+    "score": 1.0,
+    "reason": "",
+    "latency_ms": 4098.0,
+    "error": ""
+  }
+]

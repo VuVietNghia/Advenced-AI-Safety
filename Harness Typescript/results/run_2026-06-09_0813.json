@@ -1,0 +1,47 @@
+[
+  {
+    "provider": "anthropic",
+    "test_id": "math_003",
+    "passed": false,
+    "score": 0,
+    "latency_ms": 17812,
+    "reason": "",
+    "error": "422 {\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"messages\",0,\"content\"],\"msg\":\"Field required\",\"input\":{\"role\":\"user\"}}]}"
+  },
+  {
+    "provider": "anthropic",
+    "test_id": "math_005",
+    "passed": false,
+    "score": 0,
+    "latency_ms": 22579,
+    "reason": "",
+    "error": "422 {\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"messages\",0,\"content\"],\"msg\":\"Field required\",\"input\":{\"role\":\"user\"}}]}"
+  },
+  {
+    "provider": "anthropic",
+    "test_id": "math_004",
+    "passed": false,
+    "score": 0,
+    "latency_ms": 23083,
+    "reason": "",
+    "error": "422 {\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"messages\",0,\"content\"],\"msg\":\"Field required\",\"input\":{\"role\":\"user\"}}]}"
+  },
+  {
+    "provider": "anthropic",
+    "test_id": "math_001",
+    "passed": false,
+    "score": 0,
+    "latency_ms": 28242,
+    "reason": "",
+    "error": "422 {\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"messages\",0,\"content\"],\"msg\":\"Field required\",\"input\":{\"role\":\"user\"}}]}"
+  },
+  {
+    "provider": "anthropic",
+    "test_id": "math_002",
+    "passed": false,
+    "score": 0,
+    "latency_ms": 33107,
+    "reason": "",
+    "error": "422 {\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"messages\",0,\"content\"],\"msg\":\"Field required\",\"input\":{\"role\":\"user\"}}]}"
+  }
+]

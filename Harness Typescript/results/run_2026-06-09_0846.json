@@ -1,0 +1,47 @@
+[
+  {
+    "provider": "lm_studio",
+    "test_id": "math_004",
+    "passed": false,
+    "score": 0,
+    "latency_ms": 958,
+    "reason": "Expected '25', got '100 divided by 4 equals 25.'",
+    "error": ""
+  },
+  {
+    "provider": "lm_studio",
+    "test_id": "math_001",
+    "passed": true,
+    "score": 1,
+    "latency_ms": 963,
+    "reason": "",
+    "error": ""
+  },
+  {
+    "provider": "lm_studio",
+    "test_id": "math_002",
+    "passed": false,
+    "score": 0,
+    "latency_ms": 1809,
+    "reason": "Expected '12', got 'The square root of 144 is **12**.\n\n✅ Because $ 12 ...'",
+    "error": ""
+  },
+  {
+    "provider": "lm_studio",
+    "test_id": "math_005",
+    "passed": true,
+    "score": 1,
+    "latency_ms": 1971,
+    "reason": "",
+    "error": ""
+  },
+  {
+    "provider": "lm_studio",
+    "test_id": "math_003",
+    "passed": true,
+    "score": 1,
+    "latency_ms": 3383,
+    "reason": "",
+    "error": ""
+  }
+]

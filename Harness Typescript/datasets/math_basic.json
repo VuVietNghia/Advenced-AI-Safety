@@ -1,0 +1,53 @@
+[
+  {
+    "id": "math_001",
+    "input": "What is 15 * 8?",
+    "eval_type": "contains",
+    "expected_contains": [
+      "120"
+    ],
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "id": "math_002",
+    "input": "What is the square root of 144?",
+    "eval_type": "exact_match",
+    "expected": "12",
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "id": "math_003",
+    "input": "Solve for x: 2x + 5 = 15",
+    "eval_type": "contains",
+    "expected_contains": [
+      "5"
+    ],
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "id": "math_004",
+    "input": "What is 100 divided by 4?",
+    "eval_type": "exact_match",
+    "expected": "25",
+    "tags": [
+      "math"
+    ]
+  },
+  {
+    "id": "math_005",
+    "input": "If I have 5 apples and eat 2, how many are left?",
+    "eval_type": "contains",
+    "expected_contains": [
+      "3"
+    ],
+    "tags": [
+      "math"
+    ]
+  }
+]
