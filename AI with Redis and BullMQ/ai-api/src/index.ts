@@ -1,4 +1,5 @@
 import express from "express";
+import path from "path";
 import { env } from "./config/env.js";
 import { redisCache } from "./config/redis.js";
 import { initDatabase, closeDb } from "./config/database.js";
@@ -8,6 +9,9 @@ import aiRoutes from "./routes/ai.routes.js";
 
 const app = express();
 app.use(express.json({ limit: "1mb" }));   // Giới hạn body size
+
+// Phục vụ giao diện web (static files)
+app.use(express.static(path.join(process.cwd(), "public")));
 
 // Health check — bao gồm Redis connectivity
 app.get("/health", async (_req, res) => {

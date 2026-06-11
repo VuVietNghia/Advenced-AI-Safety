@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI API Workspace</title>
+    <meta name="description" content="A modern web interface to interact with the AI API">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-panel">
+            <div class="sidebar-header">
+                <h2>AI Workspace</h2>
+                <div class="status-indicator">
+                    <span class="dot connected"></span> API Connected
+                </div>
+            </div>
+            <div class="info-panel">
+                <h3>About</h3>
+                <p>Advanced AI API interface utilizing Redis caching and BullMQ for reliable background processing.</p>
+            </div>
+            
+            <div class="stats-panel">
+                <h3>Session Stats</h3>
+                <div class="stat-item">
+                    <span class="stat-label">Total Input Tokens</span>
+                    <span class="stat-value" id="stat-input-tokens">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Total Output Tokens</span>
+                    <span class="stat-value" id="stat-output-tokens">0</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-area">
+            <div class="chat-history" id="chat-history">
+                <!-- Messages will be appended here -->
+                <div class="message system-message">
+                    <div class="message-content">
+                        Welcome to the AI API workspace. Type your prompt below to start interacting.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-container glass-panel">
+                <form id="chat-form">
+                    <div class="input-wrapper">
+                        <textarea 
+                            id="prompt-input" 
+                            placeholder="Type your prompt here... (e.g., 'Calculate sqrt(144) + 2^10')" 
+                            rows="2"
+                            required
+                        ></textarea>
+                        <button type="submit" id="submit-btn" class="glow-btn">
+                            <span class="btn-text">Send</span>
+                            <div class="btn-loader hidden">
+                                <div class="spinner"></div>
+                            </div>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!-- Job Status Overlay -->
+        <div id="status-overlay" class="status-overlay hidden">
+            <div class="status-card glass-panel">
+                <div class="spinner-large"></div>
+                <h3 id="status-text">Processing your request...</h3>
+                <p id="status-detail" class="status-detail">Job ID: <span id="current-job-id">...</span></p>
+                <div class="status-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message Template -->
+    <template id="message-template">
+        <div class="message">
+            <div class="message-header">
+                <span class="role"></span>
+            </div>
+            <div class="message-content text-content"></div>
+            <div class="message-metadata hidden">
+                <div class="metadata-item cache-badge hidden">Cache Hit ⚡</div>
+                <div class="metadata-item tool-badge hidden">Tools Used: <span class="tool-names"></span></div>
+                <div class="metadata-item tokens-badge">Tokens: <span class="token-count"></span></div>
+            </div>
+        </div>
+    </template>
+
+    <script src="app.js"></script>
+</body>
+</html>
