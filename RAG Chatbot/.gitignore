@@ -1,0 +1,12 @@
+node_modules/
+.env
+
+# Old vectra data
+data/index/
+
+# Qdrant binary
+qdrant/qdrant.exe
+qdrant/storage/
+
+# Qdrant data
+data/qdrant_storage/

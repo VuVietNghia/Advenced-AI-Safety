@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "qdrant": ".\\qdrant\\qdrant.exe --config-path .\\qdrant\\config.yaml",
     "dev": "tsx src/main.ts",
     "ingest": "tsx src/ingest.ts",
     "chat": "tsx src/main.ts"
@@ -14,10 +15,10 @@
   "type": "module",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.102.0",
+    "@qdrant/js-client-rest": "^1.18.0",
     "dotenv": "^17.4.2",
     "openai": "^6.42.0",
     "pdf-parse": "^2.4.5",
-    "vectra": "^0.15.0",
     "zod": "^4.4.3"
   },
   "devDependencies": {

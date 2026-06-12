@@ -1,7 +1,7 @@
 import { loadDocumentsFromDir } from "./ingestion/loader.js";
-import { chunkDocument } from "./ingestion/chunker.js";
+import { chunkDocument, chunkMarkdown } from "./ingestion/chunker.js";
 import { embedBatch } from "./embedding/embedder.js";
-import { initIndex, upsertChunk } from "./embedding/store.js";
+import { initIndex, upsertChunk, deleteBySourceFile } from "./embedding/store.js";
 import dotenv from "dotenv";
 import path from "path";
 dotenv.config();
@@ -19,7 +19,10 @@ async function main() {
 
   for (const doc of documents) {
     console.log(`[ingest] Processing: ${doc.filename}`);
-    const chunks = chunkDocument(doc.content, doc.filename, chunkSize, overlap);
+    await deleteBySourceFile(doc.filename);
+    const chunks = doc.extension === "md"
+      ? chunkMarkdown(doc.content, doc.filename, chunkSize)
+      : chunkDocument(doc.content, doc.filename, chunkSize, overlap);
     console.log(`[ingest] ${chunks.length} chunks created`);
 
     // Batch embed all chunks from this document

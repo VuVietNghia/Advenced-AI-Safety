@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { PDFParse } from "pdf-parse";
+import { convertPdfToMarkdown } from "./pdfConverter.js";
 
 export interface RawDocument {
   filename: string;
@@ -18,10 +18,8 @@ export async function loadDocumentsFromDir(dirPath: string): Promise<RawDocument
 
     if (ext === ".pdf") {
       const buffer = fs.readFileSync(fullPath);
-      const parser = new PDFParse({ data: buffer });
-      const parsed = await parser.getText();
-      docs.push({ filename: file, content: parsed.text, extension: "pdf" });
-      await parser.destroy();
+      const markdown = await convertPdfToMarkdown(fullPath, buffer);
+      docs.push({ filename: file, content: markdown, extension: "md" });
     } else if (ext === ".txt" || ext === ".md") {
       const content = fs.readFileSync(fullPath, "utf-8");
       docs.push({ filename: file, content, extension: ext.slice(1) });
